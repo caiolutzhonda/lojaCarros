@@ -1,4 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 *{
 	margin: 0;
 	padding: 0;
 }
+
+body
+{
+	background: rgb(113,28,46);
+
+}
+
+.wrapper-tudo {
+	background: linear-gradient(0deg, rgba(113,28,46,1) 0%, rgba(245,19,68,1) 100%); 
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container-form{
+
+	width: 60%;
+	height: 900px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.itens-form{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+#texto{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 60px;
+	text-align: center;
+}
+
+
+#botao_form{
+	margin-top: 30px;
+	padding: 40px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 40px;
+	background-color: transparent;
+	border: 7px solid white;
+	border-radius: 30px;
+}
+
+.lateral-image{
+	width: 50%;
+	clip-path: polygon(33% 0, 100% 0%, 100% 100%, 0% 100%);
+	background: linear-gradient(180deg, #FFFFFF 0%, #B0B0B0 100%);
+}
+
+.background
+{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#imagem_carro
+{
+	margin-left: 200px;
+	min-width: 300px;
+	max-width: 600px;
+	object-fit: cover;
+}
+
+
+.bottom-bar
+{
+	position: fixed;
+	bottom: 0;
+	min-height: 40px;
+	max-height: 45px;
+}
+
+.social-icons
+{
+	min-width: 40px;
+	width: 30px;
+	padding: 5px 20px;
+}
+
+
