@@ -4,8 +4,23 @@ session_start();
 
 // $marca, $modelo, $cor, $ano, $placa, $imagem
 
+$marca = $_POST['marca'];
+$modelo = $_POST['modelo'];
+$cor = $_POST['cor'];
+$placa = $_POST['placa'];
+
 $vetor = $_SESSION['carro'] ?? [];
-$newCarro = new Carro($_POST['marca'], $_POST['modelo'], $_POST['cor'], $_POST['ano'], $_POST['placa'], $_POST['imagem']);
+
+if(empty($_POST['imagem']) == false){
+	$imagem = $_POST['imagem'];
+	$newCarro = new Carro(strtoupper($marca), strtoupper($modelo), strtoupper($cor), $_POST['ano'], strtoupper($placa), $imagem);
+
+}else
+{
+	$newCarro = new Carro(strtoupper($marca), strtoupper($modelo), strtoupper($cor), $_POST['ano'], strtoupper($placa));
+}
+
+
 
 $vetor[] = $newCarro;
 

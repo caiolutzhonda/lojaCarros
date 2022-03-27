@@ -8,7 +8,7 @@ class Carro
 	public $placa;
 	public $imagem;
 
-	public function __construct($marca, $modelo, $cor, $ano, $placa, $imagem)
+	public function __construct($marca, $modelo, $cor, $ano, $placa, $imagem = "images/undraw_off_road_9oae.png")
 	{
 		$this->marca = $marca;
 		$this->modelo = $modelo;
@@ -19,28 +19,22 @@ class Carro
 	}
 
 	public function register(){
-		echo "
-		<table border=\"1\">
-			<tr>
-				<th>Imagem</th>
-				<th>Marca</th>
-				<th>Modelo</th>
-				<th>Cor</th>
-				<th>Ano</th>
-				<th>Placa</th>
-			</tr>
-			<tr>
-				<td><img src=\"$this->imagem\" alt=\"imagem-uploadeda\" width=\"400\"></td>
-				<td>{$this->marca}</td>
-				<td>{$this->modelo}</td>
-				<td>{$this->cor}</td>
-				<td>{$this->ano}</td>
-				<td>{$this->placa}</td>
-			</tr>
-		</table>";
+		echo "<div class=\"resultado\">
+					<div class=\"images\">
+						<img src=\"$this->imagem\">
+					</div>
+					<div class=\"wrapper-desc\">
+						<div class=\"desc1\">
+							<p><b>Marca:</b> $this->marca <br><b>Modelo:</b> $this->modelo<br><b>Cor:</b> $this->cor</p>
+						</div>
+						<div class=\"desc2\">
+							<p><b>Ano:</b> $this->ano<br><p><b>Placa:</b> $this->placa</p>				
+						</div>
+					</div>				
+				</div>";
 	}
 	public function getImage(){
-		echo "<img src=\"$this->imagem\" alt=\"imagem-uploadeda\">";
+
 	}
 
 

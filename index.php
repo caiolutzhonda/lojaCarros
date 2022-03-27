@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,18 +19,13 @@
 		</div>	
 		<div class="lateral-image">
 			<div class="background">
-				<img src="images/Red-Car-Transparent-Free-PNG.png" id="imagem_carro" alt="imagem carro">
+				<div class="imagem-carro"></div>
 			</div>
 		</div>	
 	</div>
 	<div class="bottom-bar">
-		<img class="social-icons" src="images/instagram-logo.svg" alt="instagram-logo">
-		<img class="social-icons" src="images/facebook-logo.svg" alt="facebook">
+		<a href="#" title="Ainda não temos página no instagram"><img class="social-icons" src="images/instagram-logo.svg" alt="instagram-logo"></a>
+		<a href="#" title="Ainda não temos página no facebook"><img class="social-icons" src="images/facebook-logo.svg" alt="facebook"></a>
 	</div>
-		
-
-
-
-
 </body>
 </html>
