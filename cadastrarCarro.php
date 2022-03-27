@@ -37,7 +37,7 @@ session_start();
 						<div class="segundoinput">
 							<label>Ano de fabricação:</label>
 							<br>
-							<input type="text" name="ano" placeholder="Ex: 2005" required>
+							<input type="number" name="ano" placeholder="Ex: 2005" required>
 							<br>
 
 							<label>Placa:</label>
