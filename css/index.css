@@ -1,0 +1,92 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap";
+
+* {
+margin:0;
+padding:0;
+}
+
+body {
+background:#711c2e;
+}
+
+.wrapper-tudo {
+background:linear-gradient(0deg,rgba(113,28,46,1) 0%,rgba(245,19,68,1) 100%);
+background-repeat:no-repeat;
+display:flex;
+height:600px;
+justify-content:center;
+}
+
+.container-form {
+align-items:center;
+display:flex;
+height:100%;
+justify-content:center;
+margin-right:30px;
+width:600px;
+}
+
+.itens-form {
+display:flex;
+justify-content:center;
+}
+
+#texto {
+color:#fff;
+font-family:'Roboto',sans-serif;
+font-size:60px;
+font-weight:900;
+text-align:center;
+}
+
+#botao_form {
+background-color:transparent;
+border:7px solid #fff;
+border-radius:30px;
+color:#fff;
+font-family:'Roboto',sans-serif;
+font-size:40px;
+font-weight:900;
+margin-top:30px;
+padding:40px;
+transition-duration:.2s;
+}
+
+#botao_form:hover,#botao_form:focus {
+background-color:#fff;
+box-shadow:0 10px rgba(0,0,0,.2);
+color:#971934;
+cursor:pointer;
+font-size:43px;
+padding:43px;
+}
+
+.lateral-image {
+height:100%;
+width:600px;
+}
+
+.background {
+align-items:center;
+background-image:url(../images/Red-Car-Transparent-Free-PNG.png),url(../images/blob.svg);
+background-position:center;
+background-repeat:no-repeat,no-repeat;
+background-size:450px,700px;
+display:flex;
+height:100%;
+justify-content:center;
+width:100%;
+}
+
+.bottom-bar {
+bottom:0;
+max-height:45px;
+min-height:40px;
+position:fixed;
+}
+
+.social-icons {
+min-width:40px;
+padding:5px 20px;
+width:30px;
+}
