@@ -2,10 +2,8 @@
 require 'Carro.php';
 session_start();
 ?>
-
-
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,21 +51,14 @@ session_start();
 							<br>
 						</div>
 						<div class="wrapper-botoes">
-								<button class="botoes" type="submit">Cadastrar</button> 
-					</form>
-								<form action="limpar.php">
-									<button class="botoes" type="submit">Limpar</button>
-								</form>
+								<button class="botoes" type="submit">Cadastrar</button>
+								<a href="limpar.php" class="botoes">Limpar</a>
 						</div>
-						<!-- <button type="submit">Cadastrar</button> -->
-						<!-- não esquecer de adicionar o botão limpar depois <3 -->
-					
-					
+					</form>		
 				</div>
 			</div>
-			<!--  -->
-			<div class="wrapper-resultado">
-					<?php 
+			<div class="wrapper-resultado">					
+				<?php 
 						$vetor = $_SESSION['carro'] ?? [];
 						if(count($vetor) > 0)
 						{
@@ -76,13 +67,10 @@ session_start();
 							}
 						}else {
 						}
-					 ?>			
-				</div>
-
+				?>
 			</div>
+
 		</div>
 	</div>
-
-
 </body>
 </html>

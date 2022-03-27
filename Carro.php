@@ -36,11 +36,5 @@ class Carro
 	public function getImage(){
 
 	}
-
-
 }
-	
-
-
-
  ?>
